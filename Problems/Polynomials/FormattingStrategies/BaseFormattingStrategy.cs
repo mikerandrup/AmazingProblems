@@ -8,7 +8,7 @@ namespace Problems.Polynomials.FormattingStrategies
 {
     public class BaseFormattingStrategy
     {
-        public string ToFormattedString(Term term)
+        public virtual string ToFormattedString(Term term)
         {
             return string.Empty;
         }

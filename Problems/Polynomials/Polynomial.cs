@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Problems.Polynomials.FormattingStrategies;
 
 namespace Problems.Polynomials
 {
@@ -24,6 +25,18 @@ namespace Problems.Polynomials
                 solvedTotal += t.SolveForTerm(x);
             }
             return solvedTotal;
+        }
+
+        public string ToFormattedString(BaseFormattingStrategy formatter)
+        {
+            var sb = new StringBuilder();
+
+            foreach (Term t in this)
+            {
+                sb.Append(t.ToFormattedString(formatter));
+            }
+
+            return sb.ToString().Trim();
         }
     }
 }

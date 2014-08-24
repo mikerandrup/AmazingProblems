@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Problems.Polynomials;
+using Problems.Polynomials.FormattingStrategies;
 
 namespace TestCases
 {
@@ -19,6 +20,17 @@ namespace TestCases
             Assert.AreEqual(-320, polyTwo.Solve(1));
             Assert.AreEqual(2448, polyTwo.Solve(5));
             Assert.AreEqual(370647, polyTwo.Solve(-22));
+        }
+
+        [TestMethod]
+        public void CanFormatAsDefaultPoly()
+        {
+            var defaultFormatter = new DefaultPolyFormatter();
+            var polyOne = BuildPolyOne();
+            var polyTwo = BuildPolyTwo();
+
+            Assert.AreEqual("+3x^2 -2x +5", polyOne.ToFormattedString(defaultFormatter));
+            Assert.AreEqual("+2x^4 +10x^3 +17x^2 -32x -317", polyTwo.ToFormattedString(defaultFormatter));
         }
 
 
