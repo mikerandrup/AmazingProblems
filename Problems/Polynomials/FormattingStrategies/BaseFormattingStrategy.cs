@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Problems.Polynomials.FormattingStrategies
 {
-    class BaseFormattingStrategy
+    public class BaseFormattingStrategy
     {
+        public string ToFormattedString(Term term)
+        {
+            return string.Empty;
+        }
     }
 }

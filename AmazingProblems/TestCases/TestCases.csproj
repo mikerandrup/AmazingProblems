@@ -55,6 +55,12 @@
     <Compile Include="PolynomialTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Problems\Problems.csproj">
+      <Project>{efe2886b-e4b2-422b-9bfa-59b58bb7de85}</Project>
+      <Name>Problems</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

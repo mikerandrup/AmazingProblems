@@ -42,6 +42,7 @@
     <Compile Include="ChemSpell\ChemSpell.cs" />
     <Compile Include="DegreesOfBacon\Bacon.cs" />
     <Compile Include="Polynomials\FormattingStrategies\BaseFormattingStrategy.cs" />
+    <Compile Include="Polynomials\Polynomial.cs" />
     <Compile Include="Polynomials\Term.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
