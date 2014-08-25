@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
 using Problems.Polynomials.FormattingStrategies;
+using Problems.Polynomials.FormattingStrategies.Components;
 
 namespace Problems.Polynomials
 {
@@ -27,16 +25,22 @@ namespace Problems.Polynomials
             return solvedTotal;
         }
 
-        public string ToFormattedString(BaseFormattingStrategy formatter)
+        public string ToString(PolynomialFormattingStrategy formatter)
         {
             var sb = new StringBuilder();
 
             foreach (Term t in this)
             {
-                sb.Append(t.ToFormattedString(formatter));
+                sb.Append(t.ToString(formatter));
+            }
+            string s = sb.ToString();
+
+            foreach (IStringProcessor sp in formatter.PostProcessFormatters)
+            {
+                s = sp.Process(s);
             }
 
-            return sb.ToString().Trim();
+            return s;
         }
     }
 }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Problems.Polynomials.FormattingStrategies;
 
 namespace Problems.Polynomials
@@ -17,8 +13,8 @@ namespace Problems.Polynomials
             return Coefficient * (int)Math.Pow(x, Exponent);
         }
 
-        public string ToFormattedString(BaseFormattingStrategy formStrat) {
-            return formStrat.ToFormattedString(this);
+        public string ToString(PolynomialFormattingStrategy formatter) {
+            return formatter.Format(this);
         }
     }
 }

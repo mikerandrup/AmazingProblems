@@ -29,8 +29,8 @@ namespace TestCases
             var polyOne = BuildPolyOne();
             var polyTwo = BuildPolyTwo();
 
-            Assert.AreEqual("+3x^2 -2x +5", polyOne.ToFormattedString(defaultFormatter));
-            Assert.AreEqual("+2x^4 +10x^3 +17x^2 -32x -317", polyTwo.ToFormattedString(defaultFormatter));
+            Assert.AreEqual("3x<sup>2</sup> -2x +5", polyOne.ToString(defaultFormatter));
+            Assert.AreEqual("2x<sup>4</sup> +10x<sup>3</sup> +17x<sup>2</sup> -32x -317", polyTwo.ToString(defaultFormatter));
         }
 
 

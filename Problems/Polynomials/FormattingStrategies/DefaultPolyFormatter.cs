@@ -1,24 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Problems.Polynomials.FormattingStrategies.Components;
 
 namespace Problems.Polynomials.FormattingStrategies
 {
-    public class DefaultPolyFormatter : BaseFormattingStrategy
+    public class DefaultPolyFormatter : PolynomialFormattingStrategy
     {
-        private const string template = "{0}{1}{2}{3} ";
-        private const string termString = "x";
+        public DefaultPolyFormatter()
+        {
+            CoefficientFormatter = new DefaultCoefficientFormatter();
+            VariableFormatter = new DefaultVariableFormatter();
+            ExponentFormatter = new DefaultExponentFormatter();
+            
+            PostProcessFormatters = 
+                new List<IStringProcessor>() {
+                    new RemoveInitialPlusCharacter(),
+                    new TrimWhitespace()
+                };
+        }
 
-        public override string ToFormattedString(Term term)
+        public override string Format(Term term)
         {
             return String.Format(
-                template,
-                term.Coefficient > 0 ? "+" : "-",
-                Math.Abs(term.Coefficient) > 1 ? Math.Abs(term.Coefficient).ToString() : String.Empty,
-                term.Exponent > 0 ? termString : String.Empty,
-                term.Exponent > 1 ? "^"+term.Exponent.ToString() : String.Empty
+                "{0}{1}{2} ",
+                CoefficientFormatter.Format(term),
+                VariableFormatter.Format(term),
+                ExponentFormatter.Format(term)
             );
         }
     }
