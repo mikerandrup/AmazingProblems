@@ -14,7 +14,7 @@ namespace Problems.Polynomials
         }
 
         public string ToString(PolynomialFormattingStrategy formatter) {
-            return formatter.Format(this);
+            return formatter.FormatTerm(this);
         }
     }
 }

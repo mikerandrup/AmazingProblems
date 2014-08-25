@@ -41,8 +41,10 @@
   <ItemGroup>
     <Compile Include="ChemSpell\ChemSpell.cs" />
     <Compile Include="DegreesOfBacon\Bacon.cs" />
+    <Compile Include="Polynomials\FormattingStrategies\Components\CompSciComponents.cs" />
+    <Compile Include="Polynomials\FormattingStrategies\CompSciPolyFormatter.cs" />
     <Compile Include="Polynomials\FormattingStrategies\Components\IStringProcessor.cs" />
-    <Compile Include="Polynomials\FormattingStrategies\Components\DefaultFormatters.cs" />
+    <Compile Include="Polynomials\FormattingStrategies\Components\DefaultComponents.cs" />
     <Compile Include="Polynomials\FormattingStrategies\PolynomialFormattingStrategy.cs" />
     <Compile Include="Polynomials\FormattingStrategies\Components\Superscript.cs" />
     <Compile Include="Polynomials\FormattingStrategies\DefaultPolyFormatter.cs" />

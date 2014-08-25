@@ -10,6 +10,6 @@ namespace Problems.Polynomials.FormattingStrategies
         protected IFormatter ExponentFormatter;
         public IEnumerable<IStringProcessor> PostProcessFormatters;
 
-        public abstract string Format(Term term);
+        public abstract string FormatTerm(Term term);
     }
 }

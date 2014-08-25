@@ -33,6 +33,16 @@ namespace TestCases
             Assert.AreEqual("2x<sup>4</sup> +10x<sup>3</sup> +17x<sup>2</sup> -32x -317", polyTwo.ToString(defaultFormatter));
         }
 
+        [TestMethod]
+        public void CanFormatCompSciPoly()
+        {
+            var compSciFormatter = new CompSciFormatter();
+            var polyOne = BuildPolyOne();
+            var polyTwo = BuildPolyTwo();
+
+            Assert.AreEqual("(3*x^2) -(2*x) +(5)", polyOne.ToString(compSciFormatter));
+            Assert.AreEqual("(2*x^4) +(10*x^3) +(17*x^2) -(32*x) -(317)", polyTwo.ToString(compSciFormatter));
+        }
 
         // Setup methods
         private Polynomial BuildPolyOne()

@@ -4,13 +4,13 @@ using Problems.Polynomials.FormattingStrategies.Components;
 
 namespace Problems.Polynomials.FormattingStrategies
 {
-    public class DefaultPolyFormatter : PolynomialFormattingStrategy
+    public class CompSciFormatter : PolynomialFormattingStrategy
     {
-        public DefaultPolyFormatter()
+        public CompSciFormatter()
         {
-            CoefficientFormatter = new DefaultCoefficientFormatter();
+            CoefficientFormatter = new CompSciCoefficientFormatter();
             VariableFormatter = new DefaultVariableFormatter();
-            ExponentFormatter = new DefaultExponentFormatter();
+            ExponentFormatter = new CompSciExponentFormatter();
             
             PostProcessFormatters = 
                 new List<IStringProcessor>() {
