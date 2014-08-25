@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problems", "..\Problems\Problems.csproj", "{EFE2886B-E4B2-422B-9BFA-59B58BB7DE85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problems", "Problems\Problems.csproj", "{EFE2886B-E4B2-422B-9BFA-59B58BB7DE85}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCases", "TestCases\TestCases.csproj", "{D068CF9A-49A4-43D3-AA2F-B06DC5DA39C4}"
 	ProjectSection(ProjectDependencies) = postProject
