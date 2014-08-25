@@ -40,7 +40,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChemSpell\ChemSpell.cs" />
-    <Compile Include="DegreesOfBacon\Bacon.cs" />
+    <Compile Include="DegreesOfBacon\DegreesOfBacon.cs" />
+    <Compile Include="DegreesOfBacon\DataProvider\Categories.cs" />
+    <Compile Include="DegreesOfBacon\DataProvider\Product.cs" />
+    <Compile Include="DegreesOfBacon\DataProvider\ProductDataStore.cs" />
+    <Compile Include="DegreesOfBacon\WorkItem.cs" />
+    <Compile Include="DegreesOfBacon\WorkQueue.cs" />
+    <Compile Include="DegreesOfBacon\WorkSummary.cs" />
     <Compile Include="Polynomials\FormattingStrategies\Components\CompSciComponents.cs" />
     <Compile Include="Polynomials\FormattingStrategies\CompSciPolyFormatter.cs" />
     <Compile Include="Polynomials\FormattingStrategies\Components\IStringProcessor.cs" />
