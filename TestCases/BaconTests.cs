@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Problems.DegreesOfBacon;
 using Problems.DegreesOfBacon.DataProvider;
@@ -9,9 +8,6 @@ namespace TestCases
     [TestClass]
     public class BaconTests
     {
-        /// <summary>
-        /// Just a way to run the program... data is random each run through
-        /// </summary>
         [TestMethod]
         public void DegreesOfBaconRunner()
         {
@@ -20,7 +16,6 @@ namespace TestCases
             Assert.IsNotNull(ws.FirstMatchingProduct);
             Assert.AreEqual(Categories.Bacon, ws.FirstMatchingProduct.Category);
         }
-
 
         [TestMethod]
         public void ProductDataStoreReturnsData()

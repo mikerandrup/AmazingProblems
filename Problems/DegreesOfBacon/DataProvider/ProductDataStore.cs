@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Problems.DegreesOfBacon.DataProvider
 {
@@ -18,15 +15,14 @@ namespace Problems.DegreesOfBacon.DataProvider
             return prods;
         }
 
-        private static long _lastId = 10001;
-        private static long _idIncrement = 137; // a nice prime
+        private static long _nextProdId = 0;
         private static Product GenerateFakeProduct()
         {
-            var rand = new Random();
+            _nextProdId = (_nextProdId + 1) % 10000;
             return new Product()
             {
-                ProductId = _lastId += _idIncrement,
-                Category = rand.Next(10) == 1 ? Categories.Bacon : Categories.NotBacon
+                ProductId = _nextProdId,
+                Category = _nextProdId % 103 == 0 ? Categories.Bacon : Categories.NotBacon
             };
         }
     }
