@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Problems.ChemSpell
 {
-    class ChemSpell
+    public class ChemSpell
     {
     }
 }

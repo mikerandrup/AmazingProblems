@@ -39,7 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChemSpell\ChemicalSymbolProvider\SymbolProvider.cs" />
     <Compile Include="ChemSpell\ChemSpell.cs" />
+    <Compile Include="ChemSpell\EnglishWordProvider\WordProvider.cs" />
     <Compile Include="DegreesOfBacon\DegreesOfBacon.cs" />
     <Compile Include="DegreesOfBacon\DataProvider\Categories.cs" />
     <Compile Include="DegreesOfBacon\DataProvider\Product.cs" />
