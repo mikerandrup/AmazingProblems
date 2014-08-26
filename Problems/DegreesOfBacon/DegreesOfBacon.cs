@@ -24,7 +24,7 @@ namespace Problems.DegreesOfBacon
                 if (w.ProductToProcess.Category == Categories.Bacon)
                 {
                     WS.FirstMatchingProduct = w.ProductToProcess;
-                    WS.DistanceFromSeedOfMatch = w.DistanceFromStart;
+                    WS.DistanceFromStart = w.DistanceFromStart;
                     return;
                 }
                 else
