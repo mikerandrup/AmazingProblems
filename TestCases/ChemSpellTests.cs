@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Problems.ChemSpell;
 
 namespace TestCases
 {
@@ -7,8 +8,11 @@ namespace TestCases
     public class ChemSpellTests
     {
         [TestMethod]
-        public void TestMethod1()
+        public void WeCanSpellAWord()
         {
+            WorkSummary ws = new ChemSpell().TryToSpellLongWordsWithChemicalSymbols();
+
+            Assert.IsNotNull(ws.LongestWordFound);
         }
     }
 }
