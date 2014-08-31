@@ -21,3 +21,8 @@ Random Programming Challenges:
 floccinaucinihilipilification was the longest word (29 chars). [ fl.o.c.c.in.au.c.in.i.h.i.li.p.i.li.f.i.c.at.i.o.n ]
 
 =============
+
+
+#4 - MabLids [sic] (No copyrights infringed here!) Write a simple engine that allows you to compose "Mad Lib" style word substitutions.
+
+"After being cut by The FBI, what is next for Bob Dole? Now that Bob Dole has been executed by the The FBI, flapping to make their season-opening eleventy-billion-man roster, the question becomes: What's next? It appears that, following a uncomfortable preseason, he will have a home in the Rock Band 'The Cure', although it's not immediately clear where that will be or what roster malaria he will have.  For Bob Dole, that acne now continues for at least another nanosecond as he awaits the next bloodletting in his Rock Band 'The Cure' career."

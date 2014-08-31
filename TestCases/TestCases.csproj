@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="ChemSpellTests.cs" />
     <Compile Include="BaconTests.cs" />
+    <Compile Include="MabLidsTests.cs" />
     <Compile Include="PolynomialTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

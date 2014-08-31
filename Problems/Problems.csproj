@@ -50,6 +50,13 @@
     <Compile Include="DegreesOfBacon\WorkItem.cs" />
     <Compile Include="DegreesOfBacon\WorkQueue.cs" />
     <Compile Include="DegreesOfBacon\WorkSummary.cs" />
+    <Compile Include="MabLids\Essay.cs" />
+    <Compile Include="MabLids\EssayComponents\DynamicComponent.cs" />
+    <Compile Include="MabLids\EssayComponents\DynamicComponents\VariousWordTypes.cs" />
+    <Compile Include="MabLids\EssayComponents\DynamicComponents\DynamicWordComponent.cs" />
+    <Compile Include="MabLids\EssayComponents\EssayComponent.cs" />
+    <Compile Include="MabLids\EssayComponents\StaticComponent.cs" />
+    <Compile Include="MabLids\WordSubstitution.cs" />
     <Compile Include="Polynomials\FormattingStrategies\Components\CompSciComponents.cs" />
     <Compile Include="Polynomials\FormattingStrategies\CompSciPolyFormatter.cs" />
     <Compile Include="Polynomials\FormattingStrategies\Components\IStringProcessor.cs" />
