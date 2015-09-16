@@ -15,7 +15,7 @@ Random Programming Challenges:
 
 #2 - Given a product and its related products, how many products away is a product in the "bacon" category.
 
-1339 products were enqueued, and 103 were actually checkedbefore finding Product ID 103 in the bacon category 5 hops away from the original product.
+1339 products were enqueued, and 103 were actually checkedbefore finding Product in the bacon category 5 hops away from the original product.
 
 =============
 
