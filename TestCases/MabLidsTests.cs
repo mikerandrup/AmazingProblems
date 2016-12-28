@@ -3,23 +3,19 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Problems.MabLids;
 using Problems.MabLids.EssayComponents;
 using Problems.MabLids.EssayComponents.DynamicComponents;
-using Problems.Polynomials;
-using Problems.Polynomials.FormattingStrategies;
 
 namespace TestCases
 {
     [TestClass]
     public class MabLidsTests
     {
+        private const string EXPECTED_OUTPUT = "After being cut by The FBI, what is next for Bob Dole?\n\nNow that Bob Dole has been executed by the The FBI, flapping to make their season-opening eleventy-billion-man roster, the question becomes: What's next?\n\n It appears that, following a uncomfortable preseason, he will have a home in the Rock Band 'The Cure', although it's not immediately clear where that will be or what roster malaria he will have.\n\nFor Bob Dole, that acne now continues for at least another nanosecond as he awaits the next bloodletting in his Rock Band 'The Cure' career.";
+
         [TestMethod]
         public void EssayCanRender()
         {
             Essay sportsRookieEssay = BuildEssayOne();
-
-            string sportsEssayAsString = sportsRookieEssay.ToString();
-
-            Assert.IsFalse(String.IsNullOrWhiteSpace(sportsEssayAsString));
-
+            Assert.AreEqual(EXPECTED_OUTPUT, sportsRookieEssay.ToString());
         }
 
         public Essay BuildEssayOne()
